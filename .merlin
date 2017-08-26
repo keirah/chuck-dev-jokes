@@ -1,0 +1,19 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/keira/.nvm/versions/node/v6.10.0/lib/node_modules/bs-platform/bin/reactjs_jsx_ppx_2.exe'
+FLG -ppx /Users/keira/.nvm/versions/node/v6.10.0/lib/node_modules/bs-platform/bin/bsppx.exe
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-platform/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/reason-react/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/reason-react/lib/ocaml
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-jest/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-jest/lib/ocaml
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-director/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-director/lib/ocaml
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-fetch/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-fetch/lib/ocaml
+S /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-json/lib/ocaml
+B /Users/keira/reasonml/chuck-updated-aug/node_modules/bs-json/lib/ocaml
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}

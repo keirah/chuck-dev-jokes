@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "reason-scripts": "0.6.8"
+    "reason-scripts": "0.6.8",
+    "bs-director": "^0.0.1",
+    "bs-fetch": "github:buckletypes/bs-fetch",
+    "bs-json": "github:buckletypes/bs-json"
   },
   "scripts": {
     "start": "react-scripts start",
