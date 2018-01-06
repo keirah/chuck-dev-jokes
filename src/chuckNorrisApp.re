@@ -31,6 +31,10 @@ let make = _children => {
          (self.reduce((_) => LoadJoke(joke)))(joke);
          Js.Promise.resolve();
        })
+    |> Js.Promise.catch(error => {
+         Js.log("I'm a caught error");
+         Js.Promise.resolve(Js.log(error));
+       })
     |> ignore;
     ReasonReact.NoUpdate;
   },
