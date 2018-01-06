@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "reason-scripts": "0.6.8",
     "bs-director": "^0.0.1",
     "bs-fetch": "github:buckletypes/bs-fetch",
-    "bs-json": "github:buckletypes/bs-json"
+    "bs-json": "github:buckletypes/bs-json",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "reason-scripts": "0.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "bs-jest": "^0.1.0",
-    "reason-react": "^0.2.3"
+    "bs-platform": "2.0.0",
+    "reason-react": "^0.3.0"
   }
 }
