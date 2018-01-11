@@ -11,7 +11,7 @@ let handleLoadingData = (joke, _self) =>
 let handleClick = (_event, self) => {
   ChuckData.fetchJoke()
   |> Js.Promise.then_(joke => {
-       (self.ReasonReact.reduce((_) => LoadJoke(joke)))(joke);
+       ((_) => self.ReasonReact.send(LoadJoke(joke)))(joke);
        Js.Promise.resolve();
      })
   |> ignore;
@@ -21,14 +21,14 @@ let handleClick = (_event, self) => {
 let make = _children => {
   ...component,
   reducer: (action, _state) =>
-    switch action {
+    switch (action) {
     | LoadJoke(joke) => ReasonReact.Update({joke: Some(joke)})
     },
   initialState: () => ({joke: None}: state),
   didMount: self => {
     ChuckData.fetchJoke()
     |> Js.Promise.then_(joke => {
-         (self.reduce((_) => LoadJoke(joke)))(joke);
+         ((_) => self.send(LoadJoke(joke)))(joke);
          Js.Promise.resolve();
        })
     |> Js.Promise.catch(error => {
@@ -40,7 +40,7 @@ let make = _children => {
   },
   render: ({state}) => {
     let chuckJoke =
-      switch state.joke {
+      switch (state.joke) {
       | Some(joke) => <ChuckJoke joke />
       | None => <div> (ReasonReact.stringToElement("Loading")) </div>
       };
